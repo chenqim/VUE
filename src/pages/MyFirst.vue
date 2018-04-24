@@ -1,8 +1,9 @@
 <template>
     <div>
-        <Button type="primary" size="large" @click="add">新增</Button>
         <!-- 自定义组件v-model -->
         <my-first-component v-model="collectShow"></my-first-component>
+        <span>组件v-model绑定值：</span>{{ collectShow }}
+        <Button type="primary" size="large" @click="add">组件自定义v-model</Button>
     </div>
 </template>
 <script>
@@ -14,13 +15,13 @@ export default {
   },
   data () {
     return {
-      collectShow: false
+      collectShow: false,
+      message: ''
     }
   },
   methods: {
     add () {
       this.collectShow = true
-      this.$Message.info('click add')
     }
   }
 }
