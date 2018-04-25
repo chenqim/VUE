@@ -2,21 +2,21 @@
     <div>
         <Row>
             <i-col span="5">
-                <Menu :theme="theme3" active-name="/my/first" @on-select="routerTo">
+                <Menu :theme="theme3" :active-name="activeName" @on-select="routerTo">
                     <MenuGroup title="内容管理">
                         <menu-item name="/my/first">
                             <Icon type="document-text"></Icon>
-                            文章管理
+                            子组件自定义v-model
                         </menu-item>
                         <menu-item name="/my/second">
                             <Icon type="chatbubbles"></Icon>
-                            评论管理
+                            父组件动态传值到子组件
                         </menu-item>
                     </MenuGroup>
                     <MenuGroup title="统计分析">
-                        <menu-item name="3">
+                        <menu-item name="/my/common-options">
                             <Icon type="heart"></Icon>
-                            用户留存
+                            vue实例的4个常用选项
                         </menu-item>
                         <menu-item name="4">
                             <Icon type="heart-broken"></Icon>
@@ -35,8 +35,12 @@
 export default {
   data () {
     return {
-      theme3: 'light'
+      theme3: 'light',
+      activeName: ''
     }
+  },
+  created () {
+    this.activeName = this.$route.path
   },
   methods: {
     routerTo (name) {

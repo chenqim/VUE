@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Input v-model="name" placeholder="请输入名称" style="width: 300px;" />
+    <Input v-model="nameS" placeholder="请输入名称" style="width: 300px;" readonly />
   </div>
 </template>
 
@@ -8,21 +8,22 @@
 export default {
   name: 'MySecondComponent',
   props: {
-    name: {
+    nameF: {
       type: String
     }
   },
   data () {
     return {
+      nameS: ''
     }
   },
   created () {
   },
   watch: {
-    name: {
+    nameF: {
       handler (curVal, oldVal) {
         console.log('curVal', curVal, 'oldVal', oldVal)
-        this.name = curVal
+        this.nameS = curVal
       },
       deep: true
     }

@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import MyFirst from '../pages/MyFirst'
 import MySecond from '../pages/MySecond'
 import LeftNav from '../pages/LeftNav'
+import CommonOptions from '../pages/CommonOptions'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
           path: '/my/second',
           name: 'MySecond',
           component: MySecond
+        },
+        {
+          path: '/my/common-options',
+          name: 'CommonOptions',
+          component: CommonOptions
         }
       ]
     },

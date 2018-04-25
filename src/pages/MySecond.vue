@@ -10,8 +10,8 @@
             </Row>
             <Row class="mt20">
                 <i-col span="24">
-                    <FormItem label="父组件">
-                        <my-second-component :name="nameS"></my-second-component>
+                    <FormItem label="子组件">
+                        <my-second-component :nameF="nameS"></my-second-component>
                     </FormItem>
                 </i-col>
             </Row>
