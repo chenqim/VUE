@@ -3,24 +3,32 @@
         <Row>
             <i-col span="5">
                 <Menu :theme="theme3" :active-name="activeName" @on-select="routerTo">
-                    <MenuGroup title="内容管理">
+                    <MenuGroup title="父子组件相关">
                         <menu-item name="/my/first">
-                            <Icon type="document-text"></Icon>
+                            <Icon type="ios-nutrition"></Icon>
                             子组件自定义v-model
                         </menu-item>
                         <menu-item name="/my/second">
-                            <Icon type="chatbubbles"></Icon>
+                            <Icon type="ios-nutrition"></Icon>
                             父组件动态传值到子组件
                         </menu-item>
                     </MenuGroup>
-                    <MenuGroup title="统计分析">
+                    <MenuGroup title="vue常用">
                         <menu-item name="/my/common-options">
-                            <Icon type="heart"></Icon>
+                            <Icon type="ios-nutrition"></Icon>
                             vue实例的4个常用选项
                         </menu-item>
-                        <menu-item name="4">
-                            <Icon type="heart-broken"></Icon>
-                            流失用户
+                        <menu-item name="/my/add-class">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue动态绑定class
+                        </menu-item>
+                        <menu-item name="/my/vue-lifecycle">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue生命周期
+                        </menu-item>
+                        <menu-item name="/my/vue-nextTick">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue之this.$nextTick()
                         </menu-item>
                     </MenuGroup>
                 </Menu>

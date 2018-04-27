@@ -20,6 +20,15 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 } */
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
 .mt20 {
   margin-top: 20px;
 }
