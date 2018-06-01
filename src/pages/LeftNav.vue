@@ -30,6 +30,10 @@
                             <Icon type="ios-nutrition"></Icon>
                             vue之this.$nextTick()
                         </menu-item>
+                        <menu-item name="/my/vue-slot">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue之slot插槽
+                        </menu-item>
                     </MenuGroup>
                 </Menu>
             </i-col>

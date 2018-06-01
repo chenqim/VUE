@@ -8,6 +8,7 @@ import CommonOptions from '../pages/CommonOptions'
 import AddClass from '../pages/AddClass'
 import VueLifecycle from '../pages/VueLifecycle'
 import VueNextTick from '../pages/VueNextTick'
+import VueSlot from '../pages/VueSlot'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
           path: '/my/vue-nextTick',
           name: 'VueNextTick',
           component: VueNextTick
+        },
+        {
+          path: '/my/vue-slot',
+          name: 'VueSlot',
+          component: VueSlot
         }
       ]
     },
