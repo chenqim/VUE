@@ -1,8 +1,13 @@
 <template>
-    <div>
-        <Row>
+    <div style="background-color: #eeeeee;">
+        <Row style="height: 65px; background-color: white;" type="flex" align="middle">
+            <i-col span="2" offset="1">
+                <h2>Vue.js</h2>
+            </i-col>
+        </Row>
+        <Row class="mt20" style="background-color: white;">
             <i-col span="5">
-                <Menu :theme="theme3" :active-name="activeName" @on-select="routerTo">
+                <Menu :theme="theme3" :active-name="activeName" @on-select="routerTo" width="auto">
                     <MenuGroup title="父子组件相关">
                         <menu-item name="/my/first">
                             <Icon type="ios-nutrition"></Icon>
@@ -35,9 +40,23 @@
                             vue之slot插槽
                         </menu-item>
                     </MenuGroup>
+                    <MenuGroup title="JavaScript相关">
+                        <menu-item name="/js/interval">
+                            <Icon type="ios-nutrition"></Icon>
+                            计时器
+                        </menu-item>
+                        <menu-item name="/js/promise">
+                            <Icon type="ios-nutrition"></Icon>
+                            ES6 Promise
+                        </menu-item>
+                        <menu-item name="/js/filter">
+                            <Icon type="ios-nutrition"></Icon>
+                            Filter and Map
+                        </menu-item>
+                    </MenuGroup>
                 </Menu>
             </i-col>
-            <i-col span="19" style="padding-top: 50px;">
+            <i-col span="19" style="padding-top: 50px;padding-left: 50px;">
                 <router-view></router-view>
             </i-col>
         </Row>

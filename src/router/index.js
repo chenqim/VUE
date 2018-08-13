@@ -9,6 +9,9 @@ import AddClass from '../pages/AddClass'
 import VueLifecycle from '../pages/VueLifecycle'
 import VueNextTick from '../pages/VueNextTick'
 import VueSlot from '../pages/VueSlot'
+import Interval from '../pages/js/Interval'
+import Promise from '../pages/js/Promise'
+import Filter from '../pages/js/Filter'
 
 Vue.use(Router)
 
@@ -54,6 +57,21 @@ export default new Router({
           path: '/my/vue-slot',
           name: 'VueSlot',
           component: VueSlot
+        },
+        {
+          path: '/js/interval',
+          name: 'Interval',
+          component: Interval
+        },
+        {
+          path: '/js/promise',
+          name: 'Promise',
+          component: Promise
+        },
+        {
+          path: '/js/filter',
+          name: 'Filter',
+          component: Filter
         }
       ]
     },
