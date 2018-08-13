@@ -32,4 +32,16 @@ export default {
 .mt20 {
   margin-top: 20px;
 }
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
 </style>
