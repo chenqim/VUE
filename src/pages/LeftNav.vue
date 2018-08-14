@@ -51,7 +51,7 @@
                         </menu-item>
                         <menu-item name="/js/filter">
                             <Icon type="ios-nutrition"></Icon>
-                            Filter and Map
+                            filter/map/reduce/sort
                         </menu-item>
                     </MenuGroup>
                 </Menu>
