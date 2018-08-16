@@ -53,6 +53,10 @@
                             <Icon type="ios-nutrition"></Icon>
                             filter/map/reduce/sort
                         </menu-item>
+                        <menu-item name="/js/axios">
+                            <Icon type="ios-nutrition"></Icon>
+                            axios
+                        </menu-item>
                     </MenuGroup>
                 </Menu>
             </i-col>

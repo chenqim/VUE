@@ -50,7 +50,7 @@ let result = arr.reduce((x, y) => {
       <h1 class="mt20">sort</h1>
       <Row>
         arrayObject.sort(sortby) <br/>
-        sortby	可选。规定排序顺序。必须是函数。如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序。
+        sortby 可选。规定排序顺序。必须是函数。如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序。
       </Row>
       <Row>
         如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 x 和 y，其返回值如下：<br/>
@@ -84,7 +84,7 @@ export default {
       newArr2: [],
       arr3: [1, 2, 3, 4, 5, 6, 7, 8, 9],
       result: 0,
-      arr4: [3, 4, 1, 8,18, 7, 5, 6, 15],
+      arr4: [3, 4, 1, 8, 18, 7, 5, 6, 15],
       newArr4: []
     }
   },
@@ -138,7 +138,7 @@ export default {
       console.log('newObj', newObj)
     },
     testSort () {
-      let arr = [3, 4, 1, 8,18, 7, 5, 6, 15]
+      let arr = [3, 4, 1, 8, 18, 7, 5, 6, 15]
       arr.sort((x, y) => {
         return x - y
       })
