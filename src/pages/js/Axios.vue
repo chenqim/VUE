@@ -38,6 +38,7 @@ export default {
     }
   },
   created () {
+    // this.getHistoryToday()
   },
   methods: {
     // axios get请求
@@ -69,6 +70,21 @@ export default {
           // 感冒指数数据处理
           this.ganmao = response.data.data.ganmao
         }
+      }).catch(error => {
+        this.$Message.error('接口异常！')
+        console.log('error message', error)
+      })
+    },
+    // axios post请求
+    getHistoryToday () {
+      // 该接口不支持跨域... 没救了 需要服务器自己写后台作为中转
+      this.$axios.get('http://api.juheapi.com/japi/toh', {
+        key: 'a5c2ad5664975783f09b903a17467c3f',
+        v: '1.0',
+        month: 8,
+        day: 16
+      }).then(response => {
+        console.log('response', response)
       }).catch(error => {
         this.$Message.error('接口异常！')
         console.log('error message', error)

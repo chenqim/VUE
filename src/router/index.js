@@ -9,6 +9,7 @@ import AddClass from '../pages/AddClass'
 import VueLifecycle from '../pages/VueLifecycle'
 import VueNextTick from '../pages/VueNextTick'
 import VueSlot from '../pages/VueSlot'
+import UploadFile from '../pages/UploadFile'
 import Interval from '../pages/js/Interval'
 import Promise from '../pages/js/Promise'
 import Filter from '../pages/js/Filter'
@@ -58,6 +59,11 @@ export default new Router({
           path: '/my/vue-slot',
           name: 'VueSlot',
           component: VueSlot
+        },
+        {
+          path: '/vue/upload',
+          name: 'UploadFile',
+          component: UploadFile
         },
         {
           path: '/js/interval',

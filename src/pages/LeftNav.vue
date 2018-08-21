@@ -39,6 +39,10 @@
                             <Icon type="ios-nutrition"></Icon>
                             vue之slot插槽
                         </menu-item>
+                        <menu-item name="/vue/upload">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue之文件上传
+                        </menu-item>
                     </MenuGroup>
                     <MenuGroup title="JavaScript相关">
                         <menu-item name="/js/interval">
