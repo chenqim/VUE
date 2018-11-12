@@ -62,6 +62,12 @@
                             axios
                         </menu-item>
                     </MenuGroup>
+                    <MenuGroup title="自定义功能">
+                        <menu-item name="/function/image-to-text">
+                            <Icon type="ios-nutrition"></Icon>
+                            提取图片中的文字
+                        </menu-item>
+                    </MenuGroup>
                 </Menu>
             </i-col>
             <i-col span="19" style="padding-top: 50px;padding-left: 50px;">

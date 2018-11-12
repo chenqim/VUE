@@ -14,6 +14,7 @@ import Interval from '../pages/js/Interval'
 import Promise from '../pages/js/Promise'
 import Filter from '../pages/js/Filter'
 import Axios from '../pages/js/Axios'
+import ImageToText from '../pages/function/ImageToText'
 
 Vue.use(Router)
 
@@ -84,6 +85,11 @@ export default new Router({
           path: '/js/Axios',
           name: 'Axios',
           component: Axios
+        },
+        {
+          path: '/function/image-to-text',
+          name: 'ImageToText',
+          component: ImageToText
         }
       ]
     },

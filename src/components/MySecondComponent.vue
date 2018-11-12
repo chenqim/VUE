@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Input v-model="nameS" placeholder="请输入名称" style="width: 300px;" readonly />
+    <!-- <Input v-model="nameS" placeholder="请输入名称" style="width: 300px;" readonly /> -->
+    <Input v-model="nameF" placeholder="请输入名称" style="width: 300px;" readonly />
   </div>
 </template>
 

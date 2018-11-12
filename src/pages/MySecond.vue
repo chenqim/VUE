@@ -29,8 +29,14 @@ export default {
   data () {
     return {
       nameF: '',
-      nameS: ''
+      nameS: '888'
     }
+  },
+  created () {
+    // eslint-disable-next-line
+    let s = setTimeout(() => {
+      this.nameS = '999'
+    }, 3000)
   },
   methods: {
     pass () {
