@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Login from '@/components/Login'
 import MyFirst from '../pages/MyFirst'
 import MySecond from '../pages/MySecond'
 import LeftNav from '../pages/LeftNav'
@@ -21,6 +21,12 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
+    // 项目一运行进的首页
+    {
+      path: '/',
+      name: 'Login',
+      component: Login
+    },
     {
       path: '/',
       name: 'LeftNav',
@@ -92,11 +98,6 @@ export default new Router({
           component: ImageToText
         }
       ]
-    },
-    {
-      path: '/hello/world',
-      name: 'HelloWorld',
-      component: HelloWorld
     }
   ]
 })

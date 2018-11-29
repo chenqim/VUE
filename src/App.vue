@@ -44,4 +44,7 @@ export default {
 .ml20 {
   margin-left: 20px;
 }
+html, body, #app {
+  height: 100%;
+}
 </style>
