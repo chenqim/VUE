@@ -43,6 +43,12 @@ npm run build
 npm run build --report
 ```
 
+## 账号密码
+```
+账号：admin
+密码：111111
+```
+
 参考问题链接：  
 https://cn.vuejs.org/v2/guide/instance.html#  
 https://segmentfault.com/a/1190000008570622#articleHeader0  
