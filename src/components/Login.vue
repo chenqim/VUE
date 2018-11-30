@@ -16,10 +16,10 @@
               </i-input>
             </FormItem>
             <Form-item prop="isSuccess">
-              <div id="TencentCaptcha1" data-appid="2028910108" data-cbfn="callback" v-if="!isSuccess" >
-                  <i-input v-model="pictureText" size="small" class="check" readonly></i-input>
+              <div id="TencentCaptcha" data-appid="2084525188" data-cbfn="callback" v-show="!formInline.isSuccess" >
+                  <i-input v-model="pictureText" class="check" readonly></i-input>
               </div>
-              <div v-if="isSuccess">
+              <div v-show="formInline.isSuccess">
                 <Button type="default" size="large" long icon="ios-checkmark">验证成功</Button>
               </div>
             </Form-item>
@@ -40,7 +40,8 @@ export default {
     return {
       formInline: {
         user: '',
-        password: ''
+        password: '',
+        isSuccess: ''
       },
       ruleInline: {
         user: [
@@ -49,10 +50,23 @@ export default {
         password: [
           { required: true, message: '请输入密码', trigger: 'blur' },
           { type: 'string', min: 6, message: '密码长度至少位6个字符', trigger: 'blur' }
+        ],
+        isSuccess: [
+          { required: true, type: 'string', message: '请进行图片验证' }
         ]
       },
-      pictureText: '点我进行图片验证',
-      isSuccess: false
+      pictureText: '点我进行图片验证'
+    }
+  },
+  created () {
+    // 验证码的回调函数
+    window.callback = response => {
+      // response（未通过验证）= {ret: 1, ticket: null}
+      // response（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
+      if (response.ret === 0) {
+        this.formInline.isSuccess = 'true'
+        this.$refs['formInline'].validate()
+      }
     }
   },
   methods: {
@@ -64,6 +78,7 @@ export default {
             this.$router.push('/my/first')
           } else {
             this.$Message.error('登录失败!')
+            this.formInline.isSuccess = ''
           }
         }
       })
