@@ -5,6 +5,7 @@ import MyFirst from '../pages/MyFirst'
 import MySecond from '../pages/MySecond'
 import LeftNav from '../pages/LeftNav'
 import CommonOptions from '../pages/CommonOptions'
+import DynamicComponents from '../pages/vue/DynamicComponents'
 import AddClass from '../pages/AddClass'
 import VueLifecycle from '../pages/VueLifecycle'
 import VueNextTick from '../pages/VueNextTick'
@@ -46,6 +47,11 @@ export default new Router({
           path: '/my/common-options',
           name: 'CommonOptions',
           component: CommonOptions
+        },
+        {
+          path: '/my/dynamic-components',
+          name: 'DynamicComponents',
+          component: DynamicComponents
         },
         {
           path: '/my/add-class',

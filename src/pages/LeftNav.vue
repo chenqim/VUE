@@ -1,11 +1,13 @@
 <template>
     <div style="background-color: #eeeeee;">
-        <Row style="height: 65px; background-color: white;" type="flex" align="middle">
-            <i-col span="2" offset="1">
-                <h2>Vue.js</h2>
-            </i-col>
-        </Row>
-        <Row class="mt20" style="background-color: white;">
+        <Affix>
+            <Row style="height: 65px; background-color: white; border-bottom: 1px solid #dedede;" type="flex" align="middle">
+                <i-col span="2" offset="1">
+                    <h2>Vue.js</h2>
+                </i-col>
+            </Row>
+        </Affix>
+        <Row class="mt20" style="background-color: white; z-index: 9;">
             <i-col span="5">
                 <Menu :theme="theme3" :active-name="activeName" @on-select="routerTo" width="auto">
                     <MenuGroup title="父子组件相关">
@@ -22,6 +24,10 @@
                         <menu-item name="/my/common-options">
                             <Icon type="ios-nutrition"></Icon>
                             vue实例的4个常用选项
+                        </menu-item>
+                        <menu-item name="/my/dynamic-components">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue动态切换组件
                         </menu-item>
                         <menu-item name="/my/add-class">
                             <Icon type="ios-nutrition"></Icon>
@@ -94,3 +100,5 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+</style>
