@@ -16,6 +16,7 @@ import Promise from '../pages/js/Promise'
 import Filter from '../pages/js/Filter'
 import Axios from '../pages/js/Axios'
 import ImageToText from '../pages/function/ImageToText'
+import MultiFunctionTable from '../pages/function/MultiFunctionTable'
 
 Vue.use(Router)
 
@@ -102,6 +103,11 @@ export default new Router({
           path: '/function/image-to-text',
           name: 'ImageToText',
           component: ImageToText
+        },
+        {
+          path: '/function/multi-function-table',
+          name: 'MultiFunctionTable',
+          component: MultiFunctionTable
         }
       ]
     }

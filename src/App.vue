@@ -44,6 +44,18 @@ export default {
 .ml20 {
   margin-left: 20px;
 }
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
 html, body, #app {
   height: 100%;
 }

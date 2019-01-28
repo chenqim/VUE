@@ -74,9 +74,13 @@
                             提取图片中的文字
                         </menu-item>
                     </MenuGroup>
+                    <menu-item name="/function/multi-function-table">
+                        <Icon type="ios-nutrition"></Icon>
+                        iview多功能表格
+                    </menu-item>
                 </Menu>
             </i-col>
-            <i-col span="19" style="padding-top: 50px;padding-left: 50px;">
+            <i-col span="19" style="padding-top: 50px;padding-left: 50px;padding-right: 50px;">
                 <router-view></router-view>
             </i-col>
         </Row>
