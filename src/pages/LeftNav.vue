@@ -49,6 +49,10 @@
                             <Icon type="ios-nutrition"></Icon>
                             vue之文件上传
                         </menu-item>
+                        <menu-item name="/vue/vuex">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue之vuex
+                        </menu-item>
                     </MenuGroup>
                     <MenuGroup title="JavaScript相关">
                         <menu-item name="/js/interval">
@@ -67,17 +71,21 @@
                             <Icon type="ios-nutrition"></Icon>
                             axios
                         </menu-item>
+                        <menu-item name="/js/test">
+                            <Icon type="ios-nutrition"></Icon>
+                            test
+                        </menu-item>
                     </MenuGroup>
                     <MenuGroup title="自定义功能">
                         <menu-item name="/function/image-to-text">
                             <Icon type="ios-nutrition"></Icon>
                             提取图片中的文字
                         </menu-item>
+                        <menu-item name="/function/multi-function-table">
+                            <Icon type="ios-nutrition"></Icon>
+                            iview多功能表格
+                        </menu-item>
                     </MenuGroup>
-                    <menu-item name="/function/multi-function-table">
-                        <Icon type="ios-nutrition"></Icon>
-                        iview多功能表格
-                    </menu-item>
                 </Menu>
             </i-col>
             <i-col span="19" style="padding-top: 50px;padding-left: 50px;padding-right: 50px;">

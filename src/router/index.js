@@ -17,6 +17,8 @@ import Filter from '../pages/js/Filter'
 import Axios from '../pages/js/Axios'
 import ImageToText from '../pages/function/ImageToText'
 import MultiFunctionTable from '../pages/function/MultiFunctionTable'
+import Test from '../pages/js/Test'
+import Vuex from '../pages/vue/vuex'
 
 Vue.use(Router)
 
@@ -100,6 +102,11 @@ export default new Router({
           component: Axios
         },
         {
+          path: '/js/test',
+          name: 'Test',
+          component: Test
+        },
+        {
           path: '/function/image-to-text',
           name: 'ImageToText',
           component: ImageToText
@@ -108,6 +115,11 @@ export default new Router({
           path: '/function/multi-function-table',
           name: 'MultiFunctionTable',
           component: MultiFunctionTable
+        },
+        {
+          path: '/vue/vuex',
+          name: 'Vuex',
+          component: Vuex
         }
       ]
     }
