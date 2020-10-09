@@ -19,6 +19,7 @@ import ImageToText from '../pages/function/ImageToText'
 import MultiFunctionTable from '../pages/function/MultiFunctionTable'
 import Test from '../pages/js/Test'
 import Vuex from '../pages/vue/vuex'
+import MyInputNumber from '../pages/MyInputNumber'
 
 Vue.use(Router)
 
@@ -120,6 +121,16 @@ export default new Router({
           path: '/vue/vuex',
           name: 'Vuex',
           component: Vuex
+        },
+        {
+          path: '/vue/my-input-number',
+          name: 'MyInputNumber',
+          component: MyInputNumber
+        },
+        {
+          path: '/vue/test',
+          name: 'Test',
+          component: () => import('@/pages/vue/test.vue')
         }
       ]
     }
