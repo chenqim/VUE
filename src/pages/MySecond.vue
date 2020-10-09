@@ -11,11 +11,19 @@
             <Row class="mt20">
                 <i-col span="24">
                     <FormItem label="子组件">
-                        <my-second-component :nameF="nameS"></my-second-component>
+                        <!-- <my-second-component :nameF="nameS"></my-second-component> -->
                     </FormItem>
                 </i-col>
             </Row>
         </Form>
+        <Card>
+          <my-second-component :nameF="nameS"></my-second-component>
+        </Card>
+        <Card>
+          <p slot="title">标题</p>
+          <my-second-component :nameF="nameS"></my-second-component>
+        </Card>
+        <!-- <my-second-component :nameF="nameS"></my-second-component> -->
         <Button type="primary" class="mt20" size="large" @click="pass">父组件动态传值到子组件</Button>
     </div>
 </template>
@@ -41,6 +49,9 @@ export default {
   methods: {
     pass () {
       this.nameS = this.nameF
+    },
+    clP () {
+      console.log('222')
     }
   }
 }

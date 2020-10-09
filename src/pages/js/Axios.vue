@@ -39,6 +39,15 @@ export default {
   },
   created () {
     // this.getHistoryToday()
+    this.$axios.post("http://192.168.14.24:8080/hust_safe/mvc/reportSafty/queryGG", {
+      page: 1,
+      rows: 10
+    }).then(response => {
+      console.log('res', response)
+    }).catch(error => {
+      this.$Message.error('接口异常！')
+      console.log('error message', error)
+    })
   },
   methods: {
     // axios get请求

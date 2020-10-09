@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <Row>
-      <i-col span="11" offset="13">
+    <Row type="flex" align="middle" style="height: 100%;">
+      <i-col span="24">
         <Card class="login" :padding="20">
           <h1 style="text-align: center;">登录</h1>
           <Form ref="formInline" :model="formInline" :rules="ruleInline" style="width: 300px; margin: auto; margin-top: 20px;">
@@ -90,13 +90,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .hello {
-    background-image: url('../image/login-background.jpg');
+    background: url('../image/login-background3.jpg') no-repeat fixed center;
+    background-size: 100% 100%;
     height: 100%;
   }
   .login {
     height: 320px;
-    width: 500px;
-    margin-top: 30%;
+    width: 400px;
+    margin: 0 auto;
   }
   .check .ivu-input {
     cursor: pointer;

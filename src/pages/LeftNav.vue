@@ -21,6 +21,10 @@
                         </menu-item>
                     </MenuGroup>
                     <MenuGroup title="vue常用">
+                      <menu-item name="/vue/test">
+                            <Icon type="ios-nutrition"></Icon>
+                            vue双向绑定测试
+                        </menu-item>
                         <menu-item name="/my/common-options">
                             <Icon type="ios-nutrition"></Icon>
                             vue实例的4个常用选项
@@ -52,6 +56,10 @@
                         <menu-item name="/vue/vuex">
                             <Icon type="ios-nutrition"></Icon>
                             vue之vuex
+                        </menu-item>
+                        <menu-item name="/vue/my-input-number">
+                            <Icon type="ios-nutrition"></Icon>
+                            自定义组件
                         </menu-item>
                     </MenuGroup>
                     <MenuGroup title="JavaScript相关">
